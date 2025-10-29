@@ -1,0 +1,33 @@
+{
+  "name": "pronotes",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@tiptap/extension-text-style": "^3.5.1",
+    "@tiptap/extension-underline": "^3.5.1",
+    "@tiptap/react": "^3.5.1",
+    "@tiptap/starter-kit": "^3.5.1",
+    "axios": "^1.12.2",
+    "feather-icons": "^4.29.2",
+    "js-cookie": "^3.0.5",
+    "lucide-react": "^0.544.0",
+    "next": "15.5.3",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^7.9.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.3",
+    "tailwindcss": "^4"
+  }
+}
