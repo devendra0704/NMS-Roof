@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function Gallery() {
     const images = [
         "https://images.unsplash.com/photo-1600585154363-67eb9e2e2099",
@@ -31,7 +33,7 @@ export default function Gallery() {
                             key={i}
                             className="relative group overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
                         >
-                            <img
+                            <Image
                                 src={src}
                                 alt={`Roofing project ${i + 1}`}
                                 className="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"

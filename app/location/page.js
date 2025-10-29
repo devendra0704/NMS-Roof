@@ -51,10 +51,10 @@ const LocationSection = () => {
 
             <div className="max-w-3xl mx-auto text-center mt-16 px-4 bg-gray-300 rounded-2xl p-2">
                 <h2 className="text-3xl font-bold text-gray-800 text-center mb-8 mt-16">
-                    Don't see your location?
+                    Don&apos;t see your location?
                 </h2>
                 <p className="text-gray-600 text-center max-w-2xl mx-auto">
-                    We are constantly expanding our reach. If you don't see your city or
+                    We are constantly expanding our reach. If you don&apos;t see your city or
                     region listed, please contact us. We would love to hear from you and
                     discuss how we can serve your roofing needs.
                 </p>
