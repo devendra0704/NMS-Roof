@@ -35,6 +35,8 @@ export default function Gallery() {
                         >
                             <Image
                                 src={src}
+                                width={600}
+                                height={400}
                                 alt={`Roofing project ${i + 1}`}
                                 className="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
                             />
