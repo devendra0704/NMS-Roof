@@ -1,4 +1,4 @@
-// app/components/WhyChooseUs.jsx or src/components/WhyChooseUs.jsx
+
 
 export default function WhyChooseUs() {
     const features = [
@@ -27,17 +27,26 @@ export default function WhyChooseUs() {
             icon: "💬",
         },
         {
-            title: "Customer Satisfaction",
-            description:
-                "Your happiness is our top priority. We provide personalized service and transparent communication.",
+            title: "18+ Years of Experience",
+            description: "Decades of industry knowledge ensure reliable and proven roofing solutions.",
             icon: "💬",
         },
         {
-            title: "Customer Satisfaction",
-            description:
-                "Your happiness is our top priority. We provide personalized service and transparent communication.",
+            title: "Premium Quality Materials",
+            description: "We source only the best raw materials for superior durability and performance.",
             icon: "💬",
         },
+        {
+            title: "Expert Manufacturing",
+            description: "State-of-the-art processes guarantee precision and consistency in every product.",
+            icon: "💬",
+        },
+        {
+            title: "Excellent Customer Support",
+            description: "Our dedicated team is here to guide you from selection to installation and beyond.",
+            icon: "💬",
+        },
+
     ];
 
     return (

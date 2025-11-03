@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer className=" text-gray-600 py-12 px-6 border-t border-gray-400">
+        <footer className=" text-gray-600 pt-12 px-6 border-t border-gray-300">
             <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 border-b border-gray-300 pb-8">
                 <div>
                     <h3 className="text-2xl font-bold mb-4">NMSRoof</h3>
@@ -39,7 +39,7 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className=" mt-2 pt-2 text-center text-sm text-gray-400">
+            <div className=" m-2 pt-2 text-center text-sm text-gray-400">
                 © {new Date().getFullYear()} NMSRoof. All rights reserved.
             </div>
         </footer>

@@ -24,13 +24,13 @@ const Hero = () => {
                 <div className="flex flex-col sm:flex-row gap-4">
                     <Link
                         href="/dashboard"
-                        className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition"
+                        className="px-6 py-3 bg-[#d95c3a] text-white font-semibold rounded-xl hover:bg-[#b74a2e] transition"
                     >
                         Get Free Quote
                     </Link>
                     <Link
                         href="/login"
-                        className="px-6 py-3 border border-blue-400 text-blue-400 font-semibold rounded-xl hover:bg-blue-400 hover:text-white transition"
+                        className="px-6 py-3 border border-[#b74a2e] text-[#b74a2e] font-semibold rounded-xl hover:bg-[#b74a2e] hover:text-white transition"
                     >
                         Call Now
                     </Link>
