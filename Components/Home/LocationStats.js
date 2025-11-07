@@ -41,7 +41,7 @@ const LocationStats = () => {
                             key={index}
                             className="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-8 border border-gray-100"
                         >
-                            <h3 className="text-4xl font-bold text-blue-600 mb-2">
+                            <h3 className="text-4xl font-bold text-[#d95c3a] mb-2">
                                 {item.value}
                             </h3>
                             <h4 className="text-lg font-semibold text-gray-800">

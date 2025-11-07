@@ -1,43 +1,28 @@
-import { ShieldCheck, Users, CheckCircle, Wrench } from "lucide-react";
+import Image from "next/image";
 
 const Service = [
     {
-        icon: <Wrench size={32} className="text-blue-600" />,
-        title: "Roof Installation",
+        title: "Teen Shed Manufacturing",
         description:
-            "Expert installation of new roofs with high-quality materials for long-lasting protection.",
+            "We specialize in designing and fabricating durable teen sheds suitable for factories, warehouses, and agricultural spaces. Our structures are engineered for strength, weather resistance, and long-lasting performance.",
+        image:
+            "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80",
     },
     {
-        icon: <Users size={32} className="text-blue-600" />,
-        title: "Roof Repair",
+        title: "Roof Tiles Production",
         description:
-            "Prompt and reliable repair services for leaks, damages, and wear to extend your roof's life.",
+            "Our premium roof tiles combine strength, style, and sustainability. Manufactured using advanced technology, our tiles enhance the appearance of your property while ensuring long-lasting protection.",
+        image:
+            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
     },
     {
-        icon: <CheckCircle size={32} className="text-blue-600" />,
-        title: "Roof Maintenance",
+        title: "Roof Installation & Maintenance",
         description:
-            "Prompt and reliable maintenance services to keep your roof in top condition year-round.",
+            "From new installations to maintenance and repairs, our roofing experts ensure a seamless and reliable experience that keeps your property safe and stylish for years.",
+        image:
+            "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80",
     },
-    {
-        icon: <Users size={32} className="text-blue-600" />,
-        title: "Roof Repair",
-        description:
-            "Prompt and reliable repair services for leaks, damages, and wear to extend your roof's life.",
-    },
-    {
-        icon: <CheckCircle size={32} className="text-blue-600" />,
-        title: "Roof Maintenance",
-        description:
-            "Prompt and reliable repair services for leaks, damages, and wear to extend your roof's life.",
-    },
-    {
-        icon: <Users size={32} className="text-blue-600" />,
-        title: "Roof Repair",
-        description:
-            "Prompt and reliable repair services for leaks, damages, and wear to extend your roof's life.",
-    },
-];
+]
 
 export default function Services() {
     return (
@@ -47,19 +32,41 @@ export default function Services() {
             </h2>
             <p className="text-center font-semibold text-gray-600 mb-16 max-w-2xl mx-auto">
                 We offer a comprehensive range of roofing services to meet all your
-                residential and commercial roofing needs. Our experienced team is
-                dedicated to providing top-notch craftsmanship and exceptional customer
-                service.
+                residential and commercial needs. Our experienced team provides top-notch
+                craftsmanship and exceptional customer service.
             </p>
-            <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
-                {Service.map((service, i) => (
+            <div className="max-w-6xl mx-auto px-6 space-y-24">
+                {Service.map((service, index) => (
                     <div
-                        key={i}
-                        className="p-6 bg-white rounded-xl border border-gray-200 shadow-sm text-center  transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl cursor-pointer"
+                        key={service.title}
+                        className={`grid grid-cols-1 md:grid-cols-5 gap-10 items-center`}
                     >
-                        <div className="flex justify-center mb-4 text-blue-600">{service.icon}</div>
-                        <h3 className="text-2xl font-semibold mb-2 text-[#2b303b]">{service.title}</h3>
-                        <p className="text-gray-600">{service.description}</p>
+                        {/* Image Section */}
+                        <div
+                            className={`md:col-span-3 ${index % 2 !== 0 ? "md:order-2" : "md:order-1"
+                                }`}
+                        >
+                            <Image
+                                src={service.image}
+                                alt={service.title}
+                                width={800}
+                                height={500}
+                                className="w-full h-[300px] sm:h-[400px] object-cover rounded-2xl shadow-lg"
+                            />
+                        </div>
+
+                        {/* Content Section */}
+                        <div
+                            className={`md:col-span-2 ${index % 2 !== 0 ? "md:order-1" : "md:order-2"
+                                } text-center md:text-left`}
+                        >
+                            <h3 className="text-4xl font-semibold text-[#2b303b] mb-6">
+                                {service.title}
+                            </h3>
+                            <p className="text-gray-600 leading-relaxed text-base mb-6">
+                                {service.description}
+                            </p>
+                        </div>
                     </div>
                 ))}
             </div>

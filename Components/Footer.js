@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MapPin, Phone, Mail, Globe, Facebook, Instagram } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -21,20 +22,46 @@ export default function Footer() {
                         <li><Link href="/contact" className="hover:text-gray-500">Contact</Link></li>
                     </ul>
                 </div>
-
+                
+                {/* Contact Section */}
                 <div>
-                    <h4 className="text-lg font-semibold  mb-3">Contact</h4>
-                    <p className="text-gray-500 text-sm">📍 New Delhi, India</p>
-                    <p className="text-gray-500 text-sm">📞 +91 9XXXXX3210</p>
-                    <p className="text-gray-500 text-sm">✉ info@nmsroof.com</p>
+                    <h4 className="text-lg font-semibold mb-3 text-gray-900">Contact</h4>
+                    <p className="flex items-center gap-2 text-gray-600 text-sm">
+                        <MapPin className="w-4 h-4 text-[#d95c3a]" /> New Delhi, India
+                    </p>
+                    <p className="flex items-center gap-2 text-gray-600 text-sm mt-1">
+                        <Phone className="w-4 h-4 text-[#d95c3a]" /> +91 9XXXXX3210
+                    </p>
+                    <p className="flex items-center gap-2 text-gray-600 text-sm mt-1">
+                        <Mail className="w-4 h-4 text-[#d95c3a]" /> info@nmsroof.com
+                    </p>
                 </div>
 
+                {/* Follow Us Section */}
                 <div>
-                    <h4 className="text-lg font-semibold  mb-3">Follow Us</h4>
-                    <div className="flex gap-4 text-xl">
-                        <a href="#" className="hover:text-blue-400">🌐</a>
-                        <a href="#" className="hover:text-blue-400">📘</a>
-                        <a href="#" className="hover:text-blue-400">📸</a>
+                    <h4 className="text-lg font-semibold mb-3 text-gray-900">Follow Us</h4>
+                    <div className="flex gap-4 text-gray-600">
+                        <a
+                            href="#"
+                            className="hover:text-[#d95c3a] transition"
+                            aria-label="Website"
+                        >
+                            <Globe className="w-5 h-5" />
+                        </a>
+                        <a
+                            href="#"
+                            className="hover:text-[#d95c3a] transition"
+                            aria-label="Facebook"
+                        >
+                            <Facebook className="w-5 h-5" />
+                        </a>
+                        <a
+                            href="#"
+                            className="hover:text-[#d95c3a] transition"
+                            aria-label="Instagram"
+                        >
+                            <Instagram className="w-5 h-5" />
+                        </a>
                     </div>
                 </div>
             </div>
