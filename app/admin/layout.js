@@ -1,6 +1,4 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import LayoutClientWrapper from "./LayoutClientWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,21 +10,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "NMSRoof - Your Trusted Roofing Partner",
-  description: "Quality roofing services you can rely on.",
-};
 
-export default function RootLayout({ children }) {
 
+export default function AdminLayout({ children }) {
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <LayoutClientWrapper>
-          {children}
-        </LayoutClientWrapper>
+        {children}
       </body>
     </html>
   );

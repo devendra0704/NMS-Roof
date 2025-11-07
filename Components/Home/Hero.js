@@ -14,7 +14,7 @@ const Hero = () => {
 
             {/* Content */}
             <div className="relative max-w-4xl mx-auto  py-24 flex flex-col justify-center items-center  text-center  text-white">
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                <h1 className="text-4xl md:text-7xl font-bold mb-6 leading-tight">
                     Your Trusted Partner for Superior Roofing Solutions
                 </h1>
                 <p className="text-lg md:text-xl mb-8 max-w-2xl">
