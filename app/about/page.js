@@ -43,8 +43,8 @@ const About = () => {
                         service.
                     </p>
                     <p className="text-[#5f6b80] text-base leading-[1.7] font-normal ">
-                        Over the years, we've expanded our operations and now proudly serve
-                        thousands of residential and commercial customers. While we've
+                        Over the years, we&apos;ve expanded our operations and now proudly serve
+                        thousands of residential and commercial customers. While we&apos;ve
                         grown, our core values and commitment to craftsmanship have remained
                         unchanged, forming the bedrock of our success.
                     </p>
@@ -61,7 +61,7 @@ const About = () => {
 
                         <span className="text-5xl mr-2 text-[#d95c3a] font-bold">“</span>
                         Our mission is to provide premium roofing solutions that protect
-                        your investment and enhance your property's value.
+                        your investment and enhance your property&apos;s value.
                         <span className="text-5xl ml-2 text-[#d95c3a] font-bold">”</span>
                     </blockquote>
 
