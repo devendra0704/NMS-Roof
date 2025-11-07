@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { House, Info } from "lucide-react";
+import Link from "next/link";
 
 export default function AdminLogin() {
     const [email, setEmail] = useState("");
@@ -16,10 +17,10 @@ export default function AdminLogin() {
             <div className="bg-white shadow-lg rounded-2xl p-8 w-full max-w-md text-center">
                 {/* Branding Section */}
                 <div className="mb-8">
-                    <a href="/" className="flex justify-center items-center gap-2 mb-3 text-gray-800">
+                    <Link href="/" className="flex justify-center items-center gap-2 mb-3 text-gray-800">
                         <House className="w-6 h-6 text-[#d95c3a]" />
                         <span className="text-xl font-semibold">NLM Roofing</span>
-                    </a>
+                    </Link>
                     <h1 className="text-3xl font-bold text-gray-800">Admin Portal</h1>
                     <p className="text-gray-500 text-sm mt-2">
                         Access the dashboard to manage website content.
